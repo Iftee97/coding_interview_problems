@@ -27,4 +27,8 @@ function reverse2(str) {
     return character + reversed;
   }, '');
 }
-console.log(function2('hello'));
+
+// solution-4:
+function reverse2Refactored(str) {
+  return str.split('').reduce((reversed, character) => (character + reversed), '');
+}
