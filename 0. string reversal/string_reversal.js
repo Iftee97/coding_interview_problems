@@ -9,6 +9,7 @@
 function reverse(str) {
   return str.split('').reverse().join('');
 }
-console.log(reverse('Greetings!'));
-console.log(reverse('olleh'));
-console.log(reverse('leppa'));
+// console.log(reverse('Greetings!'));
+// console.log(reverse('olleh'));
+// console.log(reverse('leppa'));
+
