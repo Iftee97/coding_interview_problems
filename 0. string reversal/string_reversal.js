@@ -6,11 +6,11 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+
 // solution:
 function reverse(str) {
   return str.split('').reverse().join('');
 }
-console.log(reverse('elppa'));
 
 // solution-2:
 function reverse1(str) {
@@ -20,4 +20,11 @@ function reverse1(str) {
   }
   return reversed;
 }
-console.log(reverse1('elppa'));
+
+// solution-3:
+function reverse2(str) {
+  str.split('').reduce((reversed, character) => {
+    return character + reversed;
+  }, '');
+}
+console.log(function2('hello'));
