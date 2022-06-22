@@ -13,7 +13,7 @@ reverseInt(-90) === -9
 */
 
 // solution 1:
-function reverseInt(int) {
-  const reversed = int.toString().split('').reverse().join('');
-  return Number(reversed);
+function reverseInt(n) {
+  const reversed = n.toString().split('').reverse().join('')
+  return parseInt(reversed) * Math.sign(n)
 }
