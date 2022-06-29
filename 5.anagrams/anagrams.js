@@ -41,6 +41,6 @@ function makeCharMap(string) {
   return charMap;
 }
 
-console.log(anagrams('rail safety', 'fairy tales'));
-console.log(anagrams('RAIL! SAFETY!', 'fairy tales'));
-console.log(anagrams('Hi there', 'Bye there'));
+// console.log(anagrams('rail safety', 'fairy tales'));
+// console.log(anagrams('RAIL! SAFETY!', 'fairy tales'));
+// console.log(anagrams('Hi there', 'Bye there'));
