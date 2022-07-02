@@ -19,7 +19,7 @@ function anagrams(stringA, stringB) {
 
 
 // solution 2:
-function anagrams(stringA, stringB) {
+function anagramsTwo(stringA, stringB) {
   const charMapA = makeCharMap(stringA);
   const charMapB = makeCharMap(stringB);
   if (Object.keys(charMapA).length !== Object.keys(charMapB).length) {
@@ -41,6 +41,20 @@ function makeCharMap(string) {
   return charMap;
 }
 
-// console.log(anagrams('rail safety', 'fairy tales'));
-// console.log(anagrams('RAIL! SAFETY!', 'fairy tales'));
-// console.log(anagrams('Hi there', 'Bye there'));
+// console.log(anagramsTwo('rail safety', 'fairy tales'));
+// console.log(anagramsTwo('RAIL! SAFETY!', 'fairy tales'));
+// console.log(anagramsTwo('Hi there', 'Bye there'));
+
+
+// solution 3:
+function anagramsThree(stringA, stringB) {
+  return cleanString(stringA) === cleanString(stringB);
+}
+
+function cleanString(string) {
+  return string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+}
+
+console.log(anagramsThree('rail safety', 'fairy tales'));
+console.log(anagramsThree('RAIL! SAFETY!', 'fairy tales'));
+console.log(anagramsThree('Hi there', 'Bye there'));
